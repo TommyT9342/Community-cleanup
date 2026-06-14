@@ -86,32 +86,16 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-color: #2d5a3d;
-      background-image: 
-        linear-gradient(135deg, rgba(26,58,42,0.2) 0%, rgba(82,183,136,0.1) 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 1rem;
-      color: rgba(255,255,255,0.4);
-      letter-spacing: 0.1em;
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center;
     }
 
     .hero-bg::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(to bottom, rgba(26,58,42,0.3) 0%, rgba(26,58,42,0.65) 100%);
-    }
-
-    .hero-placeholder-label {
-      position: relative;
-      z-index: 1;
-      border: 1.5px dashed rgba(255,255,255,0.3);
-      padding: 0.6rem 1.4rem;
-      border-radius: 6px;
-      font-size: 0.85rem;
+      background: linear-gradient(to bottom, rgba(26,58,42,0.35) 0%, rgba(26,58,42,0.7) 100%);
     }
 
     .hero-content {
@@ -267,36 +251,17 @@
       margin-top: 2.5rem;
     }
 
-    /*
-      ============================================================
-      PHOTO PLACEHOLDERS — Replace each .photo-slot background-color
-      with:  background-image: url('your-photo.jpg');
-             background-size: cover;
-             background-position: center;
-      ============================================================
-    */
     .photo-slot {
       border-radius: 10px;
       overflow: hidden;
       position: relative;
       min-height: 260px;
-      background-color: #3a7a56;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background-size: cover;
+      background-position: center;
     }
-    .photo-slot:nth-child(2) { background-color: #2d6a4f; min-height: 180px; align-self: end; }
-    .photo-slot:nth-child(3) { background-color: #52b788; min-height: 180px; align-self: end; }
-
-    .photo-slot-label {
-      color: rgba(255,255,255,0.45);
-      font-size: 0.8rem;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      border: 1px dashed rgba(255,255,255,0.3);
-      padding: 0.4rem 0.9rem;
-      border-radius: 4px;
-    }
+    .photo-slot:nth-child(1) { background-image: url('photo1.jpg'); }
+    .photo-slot:nth-child(2) { background-image: url('photo2.jpg'); min-height: 180px; align-self: end; }
+    .photo-slot:nth-child(3) { background-image: url('photo3.jpg'); min-height: 180px; align-self: end; }
 
     /* ── ARTICLE TEASER ── */
     .teaser-section { background: var(--green-dark); }
@@ -470,10 +435,7 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg">
-      <!-- SWAP: Replace this div with your community photo as a CSS background-image -->
-      <div class="hero-placeholder-label">📷 Add your community photo here</div>
-    </div>
+    <div class="hero-bg"></div>
     <div class="hero-content">
       <div class="hero-tag">West Bedford School</div>
       <h1 class="hero-title">Your Community<br>Matters.</h1>
@@ -532,16 +494,9 @@
       <h2 class="section-title">This is West Bedford.</h2>
 
       <div class="photos-grid">
-        <!-- SWAP: Replace background-color with background-image on each .photo-slot -->
-        <div class="photo-slot">
-          <span class="photo-slot-label">📷 Community photo 1</span>
-        </div>
-        <div class="photo-slot">
-          <span class="photo-slot-label">📷 Photo 2</span>
-        </div>
-        <div class="photo-slot">
-          <span class="photo-slot-label">📷 Photo 3</span>
-        </div>
+        <div class="photo-slot"></div>
+        <div class="photo-slot"></div>
+        <div class="photo-slot"></div>
       </div>
     </div>
   </section>
@@ -595,8 +550,8 @@
           📋 Sign Up with Google Form
         </a>
         <div class="divider-or">or</div>
-        <a href="mailto:youremail@example.com" class="email-highlight">
-          📬 youremail@example.com
+        <a href="mailto:tt171751@gnspes.ca" class="email-highlight">
+          📬 tt171751@gnspes.ca
         </a>
       </div>
       <p class="join-note">Sign up through the form or send us an email — we'll get back to you with all the details.</p>
